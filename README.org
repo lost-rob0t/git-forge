@@ -1,0 +1,125 @@
+#+title: Readme
+
+* Github Forge
+Github Forge is a Nim wraper around the github api
+
+** Compile time switches
+~-d:ssl~ is *required*.
+Compile your code with ~-d:debug~ to show status codes
+
+** TODO Supported API [1/4]
+*** DONE [#A] Search [7/7]
++ [X] https://docs.github.com/en/rest/search?apiVersion=2022-11-28#search-code
++ [X] https://docs.github.com/en/rest/search?apiVersion=2022-11-28#search-commits
++ [X] https://docs.github.com/en/rest/search?apiVersion=2022-11-28#search-issues-and-pull-requests
++ [X] https://docs.github.com/en/rest/search?apiVersion=2022-11-28#search-labels
++ [X] https://docs.github.com/en/rest/search?apiVersion=2022-11-28#search-repositories
++ [X] https://docs.github.com/en/rest/search?apiVersion=2022-11-28#search-topics
++ [X] https://docs.github.com/en/rest/search?apiVersion=2022-11-28#search-users
+
+*** TODO Repo [7/29]
+**** [X] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-organization-repositories
+**** [X] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#create-an-organization-repository
+**** [X] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository
+**** [X] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#update-a-repository
+**** [X] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#delete-a-repository
+**** [X] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#enable-automated-security-fixes
+**** [X] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#disable-automated-security-fixes
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repository-contributors
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#create-a-repository-dispatch-eventu
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repository-languages
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repository-tags
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repository-teams
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-all-repository-topics
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#replace-all-repository-topics
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#transfer-a-repository
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#check-if-vulnerability-alerts-are-enabled-for-a-repository
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#enable-vulnerability-alerts
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#disable-vulnerability-alerts
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#create-a-repository-using-a-template
+**** [ ] [#A] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-public-repositories
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-the-authenticated-user
+**** [ ] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#create-a-repository-for-the-authenticated-user
+**** [ ] [#A] https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-a-user
+**** [ ] [#A] https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content
+**** [ ] [#A] https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents
+**** [ ] [#A] https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#delete-a-file
+**** [ ] [#A] https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-a-repository-readme-for-a-directory
+**** [ ] [#A] https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#download-a-repository-archive-tar
+**** [ ] [#A] https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#download-a-repository-archive-zip
+***** TODO Forks [0/3]
++ [ ] https://docs.github.com/en/rest/repos/forks?apiVersion=2022-11-28#list-forks
++ [ ] https://docs.github.com/en/rest/repos/forks?apiVersion=2022-11-28#create-a-fork
+
+
+***** TODO Git LFS [0/3]
++ [ ] https://docs.github.com/en/rest/repos/lfs?apiVersion=2022-11-28#enable-git-lfs-for-a-repository
++ [ ] https://docs.github.com/en/rest/repos/lfs?apiVersion=2022-11-28#disable-git-lfs-for-a-repository
+*** TODO Users [14/35]
+**** [X] https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28#get-the-authenticated-user
+**** [X] https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28#update-the-authenticated-user
+**** [X] [#A] https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28#list-users
+**** [X] [#A] https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28#get-a-user
+**** [X] https://docs.github.com/en/rest/users/blocking?apiVersion=2022-11-28#list-users-blocked-by-the-authenticated-user
+**** [X] https://docs.github.com/en/rest/users/blocking?apiVersion=2022-11-28#check-if-a-user-is-blocked-by-the-authenticated-user
+**** [X] https://docs.github.com/en/rest/users/blocking?apiVersion=2022-11-28#block-a-user
+**** [X] https://docs.github.com/en/rest/users/blocking?apiVersion=2022-11-28#unblock-a-user
+**** [X] https://docs.github.com/en/rest/users/emails?apiVersion=2022-11-28#set-primary-email-visibility-for-the-authenticated-user
+**** [X] https://docs.github.com/en/rest/users/emails?apiVersion=2022-11-28#list-email-addresses-for-the-authenticated-user
+**** [X] https://docs.github.com/en/rest/users/emails?apiVersion=2022-11-28#add-an-email-address-for-the-authenticated-user
+**** [X] https://docs.github.com/en/rest/users/emails?apiVersion=2022-11-28#delete-an-email-address-for-the-authenticated-user
+**** [X] https://docs.github.com/en/rest/users/emails?apiVersion=2022-11-28#list-public-email-addresses-for-the-authenticated-user
+**** [X] https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28#list-followers-of-the-authenticated-user
+**** [ ] https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28#list-the-people-the-authenticated-user-follows
+**** [ ] https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28#check-if-a-person-is-followed-by-the-authenticated-user
+**** [ ] https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28#follow-a-user
+**** [ ] https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28#unfollow-a-user
+**** [ ] [#A] https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28#list-followers-of-a-user
+**** [ ] [#A] https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28#list-the-people-a-user-follows
+**** [ ] https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28#check-if-a-user-follows-another-user
+**** [ ] https://docs.github.com/en/rest/users/gpg-keys?apiVersion=2022-11-28#list-gpg-keys-for-the-authenticated-user
+**** [ ] https://docs.github.com/en/rest/users/gpg-keys?apiVersion=2022-11-28#create-a-gpg-key-for-the-authenticated-user
+**** [ ] https://docs.github.com/en/rest/users/gpg-keys?apiVersion=2022-11-28#delete-a-gpg-key-for-the-authenticated-user
+**** [ ] [#A] https://docs.github.com/en/rest/users/gpg-keys?apiVersion=2022-11-28#list-gpg-keys-for-a-user
+**** [ ] https://docs.github.com/en/rest/users/keys?apiVersion=2022-11-28#list-public-ssh-keys-for-the-authenticated-user
+**** [ ] https://docs.github.com/en/rest/users/keys?apiVersion=2022-11-28#create-a-public-ssh-key-for-the-authenticated-user
+**** [ ] https://docs.github.com/en/rest/users/keys?apiVersion=2022-11-28#get-a-public-ssh-key-for-the-authenticated-user
+**** [ ] https://docs.github.com/en/rest/users/keys?apiVersion=2022-11-28#delete-a-public-ssh-key-for-the-authenticated-user
+**** [ ] [#A] https://docs.github.com/en/rest/users/keys?apiVersion=2022-11-28#list-public-keys-for-a-user
+**** [ ] https://docs.github.com/en/rest/users/ssh-signing-keys?apiVersion=2022-11-28#list-ssh-signing-keys-for-the-authenticated-user
+**** [ ] https://docs.github.com/en/rest/users/ssh-signing-keys?apiVersion=2022-11-28#create-a-ssh-signing-key-for-the-authenticated-user
+**** [ ] https://docs.github.com/en/rest/users/ssh-signing-keys?apiVersion=2022-11-28#get-an-ssh-signing-key-for-the-authenticated-user
+**** [ ] https://docs.github.com/en/rest/users/ssh-signing-keys?apiVersion=2022-11-28#delete-an-ssh-signing-key-for-the-authenticated-user
+**** [ ] [#A] https://docs.github.com/en/rest/users/ssh-signing-keys?apiVersion=2022-11-28#list-ssh-signing-keys-for-a-user
+*** TODO Gists [0/15]
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#list-gists-for-the-authenticated-user
++
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#create-a-gist
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#list-public-gists
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#list-starred-gists
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#get-a-gist
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#update-a-gist
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#delete-a-gist
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#list-gist-commits
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#list-gist-forks
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#fork-a-gist
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#check-if-a-gist-is-starred
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#unstar-a-gist
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#get-a-gist-revision
++ [ ] https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#get-a-gist-revision
+
++ [ ] [# https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28#list-gists-for-a-user
+
+
+*** TODO [#A] Metrics [0/11]
++ [ ] https://docs.github.com/en/rest/metrics/community?apiVersion=2022-11-28#get-community-profile-metrics
++ [ ] https://docs.github.com/en/rest/metrics/statistics?apiVersion=2022-11-28#get-the-weekly-commit-activity
++ [ ] https://docs.github.com/en/rest/metrics/statistics?apiVersion=2022-11-28#get-the-last-year-of-commit-activity
++ [ ] https://docs.github.com/en/rest/metrics/statistics?apiVersion=2022-11-28#get-all-contributor-commit-activity
++ [ ] https://docs.github.com/en/rest/metrics/statistics?apiVersion=2022-11-28#get-all-contributor-commit-activity
++ [ ] https://docs.github.com/en/rest/metrics/statistics?apiVersion=2022-11-28#get-the-weekly-commit-count
++ [ ] https://docs.github.com/en/rest/metrics/statistics?apiVersion=2022-11-28#get-the-hourly-commit-count-for-each-day
++ [ ] https://docs.github.com/en/rest/metrics/traffic?apiVersion=2022-11-28#get-repository-clones--parameters
++ [ ] https://docs.github.com/en/rest/metrics/traffic?apiVersion=2022-11-28#get-top-referral-paths
++ [ ] https://docs.github.com/en/rest/metrics/traffic?apiVersion=2022-11-28#get-top-referral-sources
++ [ ] https://docs.github.com/en/rest/metrics/traffic?apiVersion=2022-11-28#get-page-views
